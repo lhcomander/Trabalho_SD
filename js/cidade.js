@@ -1,11 +1,11 @@
-$( function() {
+	$( function() {
     $("#cidade").autocomplete({
       source: function( request, response ) {
         $.ajax( {
-          url: "app/endereco.php",
+          url: "app/cidade.php",
           dataType: "json",
           data: {
-            _action: 'get_endereco_cidade', // Método remoto
+            _action: 'get_cidade', // Método remoto
             term: request.term // Parâmetro enviado ao método
           },
           success: function( data ) {

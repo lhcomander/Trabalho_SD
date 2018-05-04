@@ -30,24 +30,18 @@ $(document).ready(function () {
   var $seuCampoCpf = $("#cpf");
 
   $seuCampoCpf.mask('000.000.000-00', {reverse: true});
-
-});
-
-$(document).ready(function () {
-
+  
   var $seuCampoTelefone = $("#telefone");
 
   $seuCampoTelefone.mask('(00)0000-0000', {reverse: true});
-
-});
-
-$(document).ready(function () {
-
+  
   var $seuCampoCelular = $("#celular");
 
   $seuCampoCelular.mask('(00)00000-0000', {reverse: true});
 
 });
+
+
 
 function valCpf($cpf){
 		$cpf = preg_replace('/[^0-9]/','',$cpf);

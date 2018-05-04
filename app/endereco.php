@@ -11,7 +11,6 @@ class endereco extends baseClass {
 
     // Recebe o CEP como parâmetro
     // Retorna dados de endereço
-//Comentário Teste Ana
     public function get_endereco(){
 
 
